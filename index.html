@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #piano {
+            background-color: #606060;
+            display: flex;
+            padding: 4px;
+        }
+
+        .key {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            font-size: 10px;
+            border: 1px solid #eee;
+            border-top: none;
+        }
+
+        .key.white {
+            width: 32px;
+            height: 128px;
+            color: black;
+            background-color: white;
+        }
+        .key.black {
+            width: 24px;
+            height: 96px;
+            margin-left: -13px;
+            margin-right: -13px;
+            z-index: 1;
+            color: white;
+            background-color: black;
+        }
+
+        .key.white.down {
+            background-color: #ffdd00;
+        }
+        .key.black.down {
+            background-color: #dd6600;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-debug"></div>
+    <div id="piano">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
